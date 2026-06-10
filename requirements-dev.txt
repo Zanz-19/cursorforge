@@ -1,0 +1,9 @@
+# Dependencias adicionales para desarrollo (opcionales).
+# Instalar con: pip install -r requirements-dev.txt
+
+# Linting y formato de código
+flake8==7.0.0
+black==24.4.2
+
+# Type checking
+mypy==1.10.0

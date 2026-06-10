@@ -1,0 +1,14 @@
+# CursorForge — dependencias Python
+# Versiones fijadas para garantizar reproducibilidad.
+# Instalar siempre dentro del entorno virtual (.venv).
+
+# Procesamiento de imágenes
+Pillow==10.3.0
+
+# PyGObject se instala a nivel de sistema (ver setup.sh),
+# no se gestiona por pip en Linux.
+# Las siguientes dependencias son solo para testing y desarrollo:
+
+# Testing
+pytest==8.2.0
+pytest-cov==5.0.0

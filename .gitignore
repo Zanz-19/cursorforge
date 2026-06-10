@@ -1,0 +1,43 @@
+# ── Entorno virtual ────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── Testing y cobertura ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ── Type checking ──────────────────────────────────────────────────────────────
+.mypy_cache/
+
+# ── Editores ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ── Archivos de proyecto generados por la app ──────────────────────────────────
+# (los proyectos del usuario no pertenecen al repositorio)
+*.cursorproject
+
+# ── Outputs de exportación ─────────────────────────────────────────────────────
+output/
+*.zip
+
+# ── Logs ───────────────────────────────────────────────────────────────────────
+*.log

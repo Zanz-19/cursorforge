@@ -1,0 +1,39 @@
+{
+  "_comment": "Agrupación de roles para el modo básico (2 imágenes). Grupo 'normal' usa imagen A, grupo 'active' usa imagen B.",
+  "normal": [
+    "default",
+    "text",
+    "vertical-text",
+    "crosshair",
+    "cell",
+    "move",
+    "grab",
+    "help",
+    "context-menu",
+    "not-allowed",
+    "no-drop",
+    "all-scroll",
+    "col-resize",
+    "row-resize",
+    "n-resize",
+    "s-resize",
+    "e-resize",
+    "w-resize",
+    "ne-resize",
+    "nw-resize",
+    "se-resize",
+    "sw-resize",
+    "ew-resize",
+    "ns-resize"
+  ],
+  "active": [
+    "pointer",
+    "grabbing",
+    "wait",
+    "progress",
+    "copy",
+    "alias",
+    "zoom-in",
+    "zoom-out"
+  ]
+}
