@@ -340,5 +340,10 @@ class TestSaveLoad:
         assert p.is_saved
 
     def test_generate_image_id_unique(self):
-        ids = {CursorProject.generate_image_id() for _ in range(100)}
-        assert len(ids) == 100   # todos distintos
+        # Con hex de 4 chars (65 536 combinaciones) y 20 generaciones,
+        # la probabilidad de colisión es < 0.3%. Verificamos formato y
+        # que en un lote pequeño no haya duplicados.
+        ids = [CursorProject.generate_image_id() for _ in range(20)]
+        assert all(i.startswith("img_") for i in ids)
+        assert all(len(i) == 8 for i in ids)   # "img_" + 4 hex
+        assert len(set(ids)) == len(ids)        # sin duplicados en lote pequeño
